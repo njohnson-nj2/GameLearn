@@ -6,7 +6,8 @@ https://www.maketecheasier.com/run-java-program-from-command-prompt/
 
 MAC   (https://stackoverflow.com/questions/2360995/how-do-i-compile-and-run-a-program-in-java-on-my-mac)
 Using the Compiler
-Now that you have written a simple Java program, you need to compile it. Run the Terminal app, which is located in "Applications/Utilities/Terminal.app". Type the following commands into the terminal:
+
+Run the Terminal app, which is located in "Applications/Utilities/Terminal.app". Type the following commands into the terminal:
 
 cd ~
 
