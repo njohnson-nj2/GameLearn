@@ -1,4 +1,4 @@
-package com.adventure.Locations;
+package com.adventure.locations;
 
 import com.adventure.Adventure;
 import com.adventure.characters.Hero;

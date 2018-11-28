@@ -1,8 +1,8 @@
 package com.adventure;
 
-import com.adventure.Locations.Dungeon;
-import com.adventure.Locations.MapSquare;
-import com.adventure.Locations.Town;
+import com.adventure.locations.Dungeon;
+import com.adventure.locations.MapSquare;
+import com.adventure.locations.Town;
 import com.adventure.characters.Hero;
 import com.adventure.characters.Monster;
 import com.adventure.equip.Armor;
