@@ -165,7 +165,7 @@ public class Hero extends Character {
             damageTaken = damage[1] - armor.getDefMod() - endurance - weapon.getDefMod();
             if(defending) {
                 damageTaken = Math.round(damageTaken/2);
-                defend = false;
+                defending = false;
             }
             if(damageTaken<0) damageTaken = 0;
             System.out.println("Hero took " + damageTaken + " damage\n");
@@ -173,7 +173,7 @@ public class Hero extends Character {
             damageTaken = damage[1] - armor.getMagicMod() - willpower;
             if(defending) {
                 damageTaken = Math.round(damageTaken/2);
-                defend = false;
+                defending = false;
             }
             if(damageTaken<0) damageTaken = 0;
             System.out.println("Hero took " + damageTaken + " damage\n");
