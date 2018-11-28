@@ -44,7 +44,7 @@ public class Dungeon extends MapSquare {
                     "Do you wish to proceed?\n");
 
             sel = sc.nextLine();
-            if (sel.toUpperCase().contains("Y") || sel.toUpperCase().contains("LEAVE") || sel.toUpperCase().contains("EXIT")) {
+            if (sel.toUpperCase().contains("NO") || sel.toUpperCase().contains("LEAVE") || sel.toUpperCase().contains("EXIT")) {
                 leaveDungeon = true;
                 System.out.println("You turn and leave Surter's lair, as you leave the doors close ominously behind you");
                 continue;

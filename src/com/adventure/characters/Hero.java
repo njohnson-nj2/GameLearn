@@ -44,9 +44,9 @@ public class Hero extends Character {
                 race = "Dwarven";
                 strength = 15;       //High
                 endurance = 15;      //High
-                intelligence = 10;   //Medium
-                willpower = 8;      //Low
-                speed = 5;          //Low
+                intelligence = 5;   //Medium
+                willpower = 10;      //Low
+                speed = 6;          //Low
                 System.out.println("Hail Dwarf\n");
             } else if (sel.toUpperCase().contains("HUMAN") || sel.toUpperCase().contains("HUME")) {
                 race = "Human";
@@ -163,10 +163,18 @@ public class Hero extends Character {
 
         if(damage[0] == 1){
             damageTaken = damage[1] - armor.getDefMod() - endurance - weapon.getDefMod();
+            if(defending) {
+                damageTaken = Math.round(damageTaken/2);
+                defend = false;
+            }
             if(damageTaken<0) damageTaken = 0;
             System.out.println("Hero took " + damageTaken + " damage\n");
         }else if(damage[0] == 2){
             damageTaken = damage[1] - armor.getMagicMod() - willpower;
+            if(defending) {
+                damageTaken = Math.round(damageTaken/2);
+                defend = false;
+            }
             if(damageTaken<0) damageTaken = 0;
             System.out.println("Hero took " + damageTaken + " damage\n");
         }
@@ -197,12 +205,12 @@ public class Hero extends Character {
     private int[] flameSpell(){
 
         int[] damageDone = new int[2];
-        if(this.magicPoints > 1){
-            int damage = Math.round(((float)weapon.getMagicMod() + (float)intelligence * (float)1.4) * (((float)Math.random()/(float)2.5) + (float)0.8));
+        if(this.magicPoints > 9){
+            int damage = Math.round(((float)weapon.getMagicMod() + (float)intelligence * (float)1.15) * (((float)Math.random()/(float)2.5) + (float)0.8));
             damageDone[0] = 2;
             damageDone[1] = damage;
             System.out.println("Hero casts flame!");
-            magicPoints -= 2;
+            magicPoints -= 10;
         }else{
             damageDone[0] = 3;
             System.out.println("Hero does not have enough magic to cast flame!");

@@ -120,7 +120,7 @@ public class MapSquare {
                 case PLAINS: System.out.println("There appears to be something hidden ahead in the brush");
                 case FOREST: System.out.println("Nestled amongst some tree roots you see something hidden");
                 case DESERT: System.out.println("You're pretty sure you see something protruding form the sand");
-                case WALLS: System.out.println("Is that something other than stone at the base of wall");
+                case WALLS: System.out.println("There appears to be something hidden at the base of the wall");
             }
             System.out.println("Do you want to investigate?");
             sel = sc.nextLine();

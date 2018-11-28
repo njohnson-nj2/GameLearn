@@ -193,7 +193,7 @@ public class Town extends MapSquare {
                 sel = sc.nextLine();
                 if (sel.toUpperCase().contains("Y")) {
                     hero.rest(5);
-                    System.out.println("You awaken feeling well rested\n");
+                    System.out.println("Your HP and MP are restored\n");
                     innChoice = true;
                 } else if (sel.toUpperCase().contains("N")){
                     System.out.println("You leave the Inn\n");
