@@ -75,36 +75,35 @@ public class Town extends MapSquare {
             sel = sc.nextLine();
             if (sel.toUpperCase().contains("WEAPON") || sel.toUpperCase().contains("BLADE") || sel.toUpperCase().contains("SWORD") || sel.toUpperCase().contains("SHIELD") || sel.toUpperCase().contains("STAFF") || sel.toUpperCase().contains("HUNA")) {
                 boolean shopWeapon = true;
+                Weapon rustySword = new Weapon(WeaponList.RUSTY_SWORD); Weapon steelSword = new Weapon(WeaponList.STEEL_SWORD);
+                Weapon rustyShield = new Weapon(WeaponList.RUSTY_SHIELD); Weapon steelShield = new Weapon(WeaponList.STEEL_SHIELD);
+                Weapon knolledStaff = new Weapon(WeaponList.KNOLLED_STAFF); Weapon magesStaff = new Weapon(WeaponList.MAGES_STAFF);
                 System.out.println("Huna: Have a look at my wares\n" +
                         "Weapon       Gold   Weapon      Gold\n" +
-                        Weapon.WeaponList.RUSTY_SWORD.toString() + "   10    " + Weapon.WeaponList.STEEL_SWORD.toString() + "  80\n" +
-                        Weapon.WeaponList.RUSTY_SHIELD.toString() + "  10    " + Weapon.WeaponList.STEEL_SHIELD.toString() + " 80\n" +
-                        Weapon.WeaponList.KNOLLED_STAFF.toString() + " 10    " + Weapon.WeaponList.MAGES_STAFF.toString() + "  80\n"
+                        rustySword.toString() + "   10    " + steelSword.toString() + "  80\n" +
+                        rustyShield.toString() + "  10    " + steelShield.toString() + " 80\n" +
+                        knolledStaff.toString() + " 10    " + magesStaff.toString() + "  80\n"
                     );
+                
                 Weapon weapon;
                 while(shopWeapon){
                     System.out.println("Huna: What would you like to look at?");
                     sel = sc.nextLine();
-                    if (sel.toUpperCase().contains(Weapon.WeaponList.RUSTY_SWORD.toString().toUpperCase()) ) {
-                        weapon = new Weapon(Weapon.WeaponList.RUSTY_SWORD);
-
-                    } else if (sel.toUpperCase().contains(Weapon.WeaponList.STEEL_SWORD.toString().toUpperCase()) ) {
-                        weapon = new Weapon(Weapon.WeaponList.STEEL_SWORD);
-
-                    } else if (sel.toUpperCase().contains(Weapon.WeaponList.RUSTY_SHIELD.toString().toUpperCase()) ) {
-                        weapon = new Weapon(Weapon.WeaponList.RUSTY_SHIELD);
-
-                    } else if (sel.toUpperCase().contains(Weapon.WeaponList.STEEL_SHIELD.toString().toUpperCase()) ) {
-                        weapon = new Weapon(Weapon.WeaponList.STEEL_SHIELD);
-
-                    } else if (sel.toUpperCase().contains(Weapon.WeaponList.KNOLLED_STAFF.toString().toUpperCase()) ) {
-                        weapon = new Weapon(Weapon.WeaponList.KNOLLED_STAFF);
-
-                    } else if (sel.toUpperCase().contains(Weapon.WeaponList.MAGES_STAFF.toString().toUpperCase()) ) {
-                        weapon = new Weapon(Weapon.WeaponList.MAGES_STAFF);
+                    if (sel.toUpperCase().contains(rustySword.toString().toUpperCase()) ) {
+                        weapon = rustySword;
+                    } else if (sel.toUpperCase().contains(steelSword.toString().toUpperCase()) ) {
+                        weapon = steelSword;
+                    } else if (sel.toUpperCase().contains(rustyShield.toString().toUpperCase()) ) {
+                        weapon = rustyShield;
+                    } else if (sel.toUpperCase().contains(steelShield.toString().toUpperCase()) ) {
+                        weapon = steelShield;
+                    } else if (sel.toUpperCase().contains(knolledStaff.toString().toUpperCase()) ) {
+                        weapon = knolledStaff;
+                    } else if (sel.toUpperCase().contains(magesStaff.toString().toUpperCase()) ) {
+                        weapon = magesStaff;
                     } else if (sel.toUpperCase().contains("LEAVE") || sel.toUpperCase().contains("EXIT")) {
                         shopWeapon = false;
-                        weapon = new Weapon(Weapon.WeaponList.RUSTY_SWORD);
+                        weapon = rustySword;
                         System.out.println("You step away from Huna's weapons\n");
                     } else {
                         System.out.println("Sorry I didn't get that:\n");
@@ -123,38 +122,41 @@ public class Town extends MapSquare {
                 }
             } else if (sel.toUpperCase().contains("ARMOR") || sel.toUpperCase().contains("HEAVY") || sel.toUpperCase().contains("LIGHT") || sel.toUpperCase().contains("ROBE") || sel.toUpperCase().contains("THUDTRAN")) {
                 boolean shopArmor = true;
+                Armor rustyArmor = new Armor(ArmorList.RUSTY_ARMOR); Armor steelArmor = new Armor(ArmorList.STEEL_ARMOR);
+                Armor lightArmor = new Armor(ArmorList.LIGHT_ARMOR); Armor scaleArmor = new Armor(ArmorList.SCALE_ARMOR);
+                Armor robes = new Armor(ArmorList.ROBES); Armor magesRobes = new Armor(ArmorList.MAGES_ROBES);
                 System.out.println("Thudtran: Have a look at my wares\n" +
-                        "Armor       Gold   Armor       Gold" +
-                        Armor.ArmorList.RUSTY_ARMOR.toString() + " 10    " + Armor.ArmorList.STEEL_ARMOR.toString() + " 90" +
-                        Armor.ArmorList.LIGHT_ARMOR.toString() + " 10    " + Armor.ArmorList.SCALE_ARMOR.toString() + " 90" +
-                        Armor.ArmorList.ROBES.toString() + "       10    " + Armor.ArmorList.MAGES_ROBES.toString() + " 90"
+                        "Armor       Gold   Armor       Gold\n" +
+                        rustyArmor.toString() + " 10    " + steelArmor.toString() + " 90\n" +
+                        lightArmor.toString() + " 10    " + scaleArmor.toString() + " 90\n" +
+                        robes.toString() + "       10    " + magesRobes.toString() + " 90\n"
                 );
 
                 Armor armor;
                 while(shopArmor){
                     System.out.println("Thudtran: What would you like to look at?");
                     sel = sc.nextLine();
-                    if (sel.toUpperCase().contains(Armor.ArmorList.RUSTY_ARMOR.toString().toUpperCase()) ) {
-                        armor = new Armor(Armor.ArmorList.RUSTY_ARMOR);
+                    if (sel.toUpperCase().contains(rustyArmor.toString().toUpperCase()) ) {
+                        armor = rustyArmor;
 
-                    } else if (sel.toUpperCase().contains(Armor.ArmorList.STEEL_ARMOR.toString().toUpperCase()) ) {
-                        armor = new Armor(Armor.ArmorList.STEEL_ARMOR);
+                    } else if (sel.toUpperCase().contains(steelArmor.toString().toUpperCase()) ) {
+                        armor = steelArmor;
 
-                    } else if (sel.toUpperCase().contains(Armor.ArmorList.LIGHT_ARMOR.toString().toUpperCase()) ) {
-                        armor = new Armor(Armor.ArmorList.LIGHT_ARMOR);
+                    } else if (sel.toUpperCase().contains(lightArmor.toString().toUpperCase()) ) {
+                        armor = lightArmor;
 
-                    } else if (sel.toUpperCase().contains(Armor.ArmorList.SCALE_ARMOR.toString().toUpperCase()) ) {
-                        armor = new Armor(Armor.ArmorList.SCALE_ARMOR);
+                    } else if (sel.toUpperCase().contains(scaleArmor.toString().toUpperCase()) ) {
+                        armor = scaleArmor;
 
-                    } else if (sel.toUpperCase().contains(Armor.ArmorList.ROBES.toString().toUpperCase()) ) {
-                        armor = new Armor(Armor.ArmorList.ROBES);
+                    } else if (sel.toUpperCase().contains(robes.toString().toUpperCase()) ) {
+                        armor = robes;
 
-                    } else if (sel.toUpperCase().contains(Armor.ArmorList.MAGES_ROBES.toString().toUpperCase()) ) {
-                        armor = new Armor(Armor.ArmorList.MAGES_ROBES);
+                    } else if (sel.toUpperCase().contains(magesRobes.toString().toUpperCase()) ) {
+                        armor = magesRobes;
 
                     } else if (sel.toUpperCase().contains("LEAVE") || sel.toUpperCase().contains("EXIT")) {
                         shopArmor = false;
-                        armor = new Armor(Armor.ArmorList.RUSTY_ARMOR);
+                        armor = rustyArmor;
                         System.out.println("You step away from Thudtran's armor\n");
                     } else {
                         System.out.println("Sorry I didn't get that:\n");
@@ -217,7 +219,7 @@ public class Town extends MapSquare {
         boolean leaveBar = false;
 
         System.out.println("Scanning the bar you see a bearded dwarf standing behind the bar cleaning a glass,\n" +
-                "a few patrons asleep at the bar and one friendly looking elf who waves at you as you enter\n" +
+                "A few patrons asleep at the bar, and one friendly looking elf who waves at you as you enter\n" +
                 "Do you want to order a drink from the barkeep, approach the friendly elf or leave?\n"
             );
         while(!leaveBar){
@@ -268,7 +270,7 @@ public class Town extends MapSquare {
                             "         Farewell traveler and good luck on your journeys");
                 } else if(scout > 7){
                     System.out.println("         Near the walls to the NorthEast I'm pretty sure I saw something shine\n" +
-                            "         I'm not certain what, but it Surter's agents patrol those walls and I didn't stick around, be careful should you seek it out\n" +
+                            "         I'm not certain what, but Surter's agents patrol those walls and I didn't stick around, be careful should you seek it out\n" +
                             "         Farewell traveler and good luck on your journeys");
                 } else {
                     System.out.println("         Amongst the trees to the NorthWest I almost thought there was a piece of wood very different from the others\n" +

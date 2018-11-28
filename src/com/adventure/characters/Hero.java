@@ -276,14 +276,14 @@ public class Hero extends Character {
         } else {
             System.out.println("Available |   " + comp.getDamage() + "    |   " + comp.getMagicMod() + "   |  " + comp.getDefMod());
         }
-        System.out.println("\nDo you want to equip Available " + comp.toString() + " or keep Equipped " + weapon.toString() + "?");
+        System.out.println("\nDo you want to equip New " + comp.toString() + " or Keep equipped " + weapon.toString() + "?");
         sel = sc.nextLine();
         while(!weaponChoice){
-            if (sel.toUpperCase().contains("EQUIP") || sel.toUpperCase().contains(weapon.toString().toUpperCase())) {
+            if (sel.toUpperCase().contains("KEEP") || sel.toUpperCase().contains("EQUIPPED") || sel.toUpperCase().contains(weapon.toString().toUpperCase())) {
                 weaponChoice = true;
                 System.out.println("You do not take the " + comp.toString());
                 return false;
-            } else if (sel.toUpperCase().contains("AVAIL") || sel.toUpperCase().contains(comp.toString().toUpperCase())) {
+            } else if (sel.toUpperCase().contains("NEW") || sel.toUpperCase().contains("EQUIP") || sel.toUpperCase().contains(comp.toString().toUpperCase())) {
                 weaponChoice = true;
                 return true;
             } else {
@@ -320,14 +320,14 @@ public class Hero extends Character {
         } else {
             System.out.println("Equipped  |    " + comp.getDefMod() + "    |    " + comp.getMagicMod() + "    |  " + comp.getSpeedMod());
         }
-        System.out.println("\nDo you want to equip Available " + comp.toString() + " or keep Equipped " + armor.toString() + "?");
+        System.out.println("\nDo you want to equip New " + comp.toString() + " or Keep equipped " + armor.toString() + "?");
         sel = sc.nextLine();
         while(!armorChoice){
-            if (sel.toUpperCase().contains("EQUIP") || sel.toUpperCase().contains(armor.toString().toUpperCase())) {
+            if (sel.toUpperCase().contains("KEEP") || sel.toUpperCase().contains("EQUIPPED") || sel.toUpperCase().contains(armor.toString().toUpperCase())) {
                 armorChoice = true;
                 System.out.println("You do not take the " + comp.toString());
                 return false;
-            } else if (sel.toUpperCase().contains("AVAIL") || sel.toUpperCase().contains(comp.toString().toUpperCase())) {
+            } else if (sel.toUpperCase().contains("NEW") || sel.toUpperCase().contains("EQUIP") || sel.toUpperCase().contains(comp.toString().toUpperCase())) {
                 armorChoice = true;
                 return true;
             } else {
