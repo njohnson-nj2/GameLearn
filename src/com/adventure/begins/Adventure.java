@@ -1,4 +1,4 @@
-package com.adventure;
+package com.adventure.begins;
 
 import com.adventure.locations.Dungeon;
 import com.adventure.locations.MapSquare;
@@ -26,9 +26,6 @@ public class Adventure {
 
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-
-        Adventure a = new Adventure();
-
 
         System.out.println("Welcome to Acalidia!\nIf you would like a brief description of how to play type Y and hit enter\nTo get straight to the game type N and hit enter\n");
         String sel = sc.nextLine();

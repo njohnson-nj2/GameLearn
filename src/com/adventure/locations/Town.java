@@ -1,6 +1,6 @@
 package com.adventure.locations;
 
-import com.adventure.Adventure;
+import com.adventure.begins.Adventure;
 import com.adventure.characters.Hero;
 import com.adventure.characters.Monster;
 import com.adventure.equip.Armor;
