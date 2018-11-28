@@ -4,30 +4,26 @@ Windows
 1) Simple path to install JDK
 https://www.maketecheasier.com/run-java-program-from-command-prompt/
 
-2) Open GameLearn folder wherever it is saved and navigate down to adventure folder, copy the filepath (X)
+2) Open GameLearn folder wherever it is saved and navigate down to src folder, copy the filepath (X)
 
 3) Open command prompt and type in cd X
 
-4) Type in: javac -cp . Adventure.java characters\*.java equip\*.java locations\*.java
+4) Type in: javac -cp . com\adventure\begins\Adventure.java
 
-5) From the GameLearn folder navigate down to the src folder, copy the filepath (Y)
+5)Now to run the game any number of times type in: 
 
-6)Now to run the game any number of times type in: 
-
-java -cp Y com.adventure.Adventure com.adventure.characters.* com.adventure.equip.* com.adventure.locations.*
+java -cp . com.adventure.begins.Adventure
 
 
 MAC
 
-1) Open GameLearn folder wherever it is saved and navigate down to adventure folder, copy the filepath (X)
+1) Open GameLearn folder wherever it is saved and navigate down to src folder, copy the filepath (X)
 
 2) Open command prompt and type in cd X
 
-3) Type in: javac -cp . Adventure.java characters/*.java equip/*.java locations/*.java
+3) Type in: javac -cp . com/adventure/begins/Adventure.java
 
-4) From the GameLearn folder navigate down to the src folder, copy the full filepath (Y)
+4)Now to run the game any number of times type in: 
 
-5)Now to run the game any number of times type in: 
-
-java -cp Y com.adventure.Adventure com.adventure.characters.* com.adventure.equip.* com.adventure.locations.*
+java -cp . com.adventure.begins.Adventure
 
