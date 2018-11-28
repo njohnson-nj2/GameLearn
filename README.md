@@ -8,13 +8,13 @@ https://www.maketecheasier.com/run-java-program-from-command-prompt/
 
 3) Open command prompt and type in cd X
 
-4) Type in: javac -cp . Adventure.java characters\*.java equip\*.java Locations\*.java
+4) Type in: javac -cp . Adventure.java characters\*.java equip\*.java locations\*.java
 
 5) From the GameLearn folder navigate down to the src folder, copy the filepath (Y)
 
 6)Now to run the game any number of times type in: 
 
-java -cp Y com.adventure.Adventure com.adventure.characters.* com.adventure.equip.* com.adventure.Locations.*
+java -cp Y com.adventure.Adventure com.adventure.characters.* com.adventure.equip.* com.adventure.locations.*
 
 
 MAC
@@ -23,11 +23,11 @@ MAC
 
 2) Open command prompt and type in cd X
 
-3) Type in: javac -cp . Adventure.java characters/*.java equip/*.java Locations/*.java
+3) Type in: javac -cp . Adventure.java characters/*.java equip/*.java locations/*.java
 
 4) From the GameLearn folder navigate down to the src folder, copy the full filepath (Y)
 
 5)Now to run the game any number of times type in: 
 
-java -cp Y com.adventure.Adventure com.adventure.characters.* com.adventure.equip.* com.adventure.Locations.*
+java -cp Y com.adventure.Adventure com.adventure.characters.* com.adventure.equip.* com.adventure.locations.*
 
