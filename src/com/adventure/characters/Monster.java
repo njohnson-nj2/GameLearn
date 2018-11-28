@@ -32,7 +32,7 @@ public class Monster extends Character {
                 intelligence = 4;   //Governs magic attack
                 willpower = 2;      //Governs magic defense
                 speed = 15;
-                expEarned = 118;
+                expEarned = 18;
                 drop = 8;
                 break;
             case LESSER_DEMON:
