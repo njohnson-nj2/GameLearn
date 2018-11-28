@@ -346,8 +346,9 @@ public class Hero extends Character {
         //Stat increases: Need balancing!!!!--------------------------------------------------------------------------------------------------------------------
         float levelChange = 1 + ((level - (float).5) /10 );
 
-        healthPoints = Math.round(healthPoints *= levelChange);
-        magicPoints = Math.round(magicPoints *= levelChange);
+        maxHP = Math.round(maxHP *= levelChange);
+        maxMP = Math.round(maxMP *= levelChange);
+        rest();
         strength = Math.round(strength *= levelChange);
         endurance = Math.round(endurance *= levelChange);
         intelligence = Math.round(intelligence *= levelChange);
@@ -355,8 +356,8 @@ public class Hero extends Character {
         speed = Math.round(speed *= levelChange);
 
         System.out.println("Hero raises to level " + (++level));
-        System.out.println("HP increased to " + healthPoints);
-        System.out.println("MP increased to " + magicPoints);
+        System.out.println("HP increased to " + maxHP);
+        System.out.println("MP increased to " + maxMP);
         System.out.println("Strength increased to " + strength);
         System.out.println("Endurance increased to " + endurance);
         System.out.println("Intelligence increased to " + intelligence);

@@ -76,10 +76,10 @@ public class Town extends MapSquare {
             if (sel.toUpperCase().contains("WEAPON") || sel.toUpperCase().contains("BLADE") || sel.toUpperCase().contains("SWORD") || sel.toUpperCase().contains("SHIELD") || sel.toUpperCase().contains("STAFF") || sel.toUpperCase().contains("HUNA")) {
                 boolean shopWeapon = true;
                 System.out.println("Huna: Have a look at my wares\n" +
-                        "Weapon       Gold   Weapon      Gold" +
-                        Weapon.WeaponList.RUSTY_SWORD.toString() + "   10    " + Weapon.WeaponList.STEEL_SWORD.toString() + "  80" +
-                        Weapon.WeaponList.RUSTY_SHIELD.toString() + "  10    " + Weapon.WeaponList.STEEL_SHIELD.toString() + " 80" +
-                        Weapon.WeaponList.KNOLLED_STAFF.toString() + " 10    " + Weapon.WeaponList.MAGES_STAFF.toString() + "  80"
+                        "Weapon       Gold   Weapon      Gold\n" +
+                        Weapon.WeaponList.RUSTY_SWORD.toString() + "   10    " + Weapon.WeaponList.STEEL_SWORD.toString() + "  80\n" +
+                        Weapon.WeaponList.RUSTY_SHIELD.toString() + "  10    " + Weapon.WeaponList.STEEL_SHIELD.toString() + " 80\n" +
+                        Weapon.WeaponList.KNOLLED_STAFF.toString() + " 10    " + Weapon.WeaponList.MAGES_STAFF.toString() + "  80\n"
                     );
                 Weapon weapon;
                 while(shopWeapon){
