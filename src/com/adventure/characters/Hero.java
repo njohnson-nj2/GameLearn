@@ -213,6 +213,7 @@ public class Hero extends Character {
             magicPoints -= 10;
         }else{
             damageDone[0] = 3;
+            damageDone[1] = 0;
             System.out.println("Hero does not have enough magic to cast flame!");
         }
         return damageDone;

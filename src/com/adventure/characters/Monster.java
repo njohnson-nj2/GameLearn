@@ -95,6 +95,8 @@ public class Monster extends Character {
             magicPoints = Math.round(magicPoints *= levelChange);
             speed = Math.round(speed *= levelChange);
         }
+        maxHP = healthPoints;
+        maxMP = magicPoints;
     }
 
     //
