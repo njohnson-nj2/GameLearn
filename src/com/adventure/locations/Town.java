@@ -75,9 +75,9 @@ public class Town extends MapSquare {
             sel = sc.nextLine();
             if (sel.toUpperCase().contains("WEAPON") || sel.toUpperCase().contains("BLADE") || sel.toUpperCase().contains("SWORD") || sel.toUpperCase().contains("SHIELD") || sel.toUpperCase().contains("STAFF") || sel.toUpperCase().contains("HUNA")) {
                 boolean shopWeapon = true;
-                Weapon rustySword = new Weapon(WeaponList.RUSTY_SWORD); Weapon steelSword = new Weapon(WeaponList.STEEL_SWORD);
-                Weapon rustyShield = new Weapon(WeaponList.RUSTY_SHIELD); Weapon steelShield = new Weapon(WeaponList.STEEL_SHIELD);
-                Weapon knolledStaff = new Weapon(WeaponList.KNOLLED_STAFF); Weapon magesStaff = new Weapon(WeaponList.MAGES_STAFF);
+                Weapon rustySword = new Weapon(Weapon.WeaponList.RUSTY_SWORD); Weapon steelSword = new Weapon(Weapon.WeaponList.STEEL_SWORD);
+                Weapon rustyShield = new Weapon(Weapon.WeaponList.RUSTY_SHIELD); Weapon steelShield = new Weapon(Weapon.WeaponList.STEEL_SHIELD);
+                Weapon knolledStaff = new Weapon(Weapon.WeaponList.KNOLLED_STAFF); Weapon magesStaff = new Weapon(Weapon.WeaponList.MAGES_STAFF);
                 System.out.println("Huna: Have a look at my wares\n" +
                         "Weapon       Gold   Weapon      Gold\n" +
                         rustySword.toString() + "   10    " + steelSword.toString() + "  80\n" +
@@ -122,9 +122,9 @@ public class Town extends MapSquare {
                 }
             } else if (sel.toUpperCase().contains("ARMOR") || sel.toUpperCase().contains("HEAVY") || sel.toUpperCase().contains("LIGHT") || sel.toUpperCase().contains("ROBE") || sel.toUpperCase().contains("THUDTRAN")) {
                 boolean shopArmor = true;
-                Armor rustyArmor = new Armor(ArmorList.RUSTY_ARMOR); Armor steelArmor = new Armor(ArmorList.STEEL_ARMOR);
-                Armor lightArmor = new Armor(ArmorList.LIGHT_ARMOR); Armor scaleArmor = new Armor(ArmorList.SCALE_ARMOR);
-                Armor robes = new Armor(ArmorList.ROBES); Armor magesRobes = new Armor(ArmorList.MAGES_ROBES);
+                Armor rustyArmor = new Armor(Armor.ArmorList.RUSTY_ARMOR); Armor steelArmor = new Armor(Armor.ArmorList.STEEL_ARMOR);
+                Armor lightArmor = new Armor(Armor.ArmorList.LIGHT_ARMOR); Armor scaleArmor = new Armor(Armor.ArmorList.SCALE_ARMOR);
+                Armor robes = new Armor(Armor.ArmorList.ROBES); Armor magesRobes = new Armor(Armor.ArmorList.MAGES_ROBES);
                 System.out.println("Thudtran: Have a look at my wares\n" +
                         "Armor       Gold   Armor       Gold\n" +
                         rustyArmor.toString() + " 10    " + steelArmor.toString() + " 90\n" +
